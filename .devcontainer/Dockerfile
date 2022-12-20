@@ -24,7 +24,7 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 COPY .devcontainer/library-scripts/*.sh .devcontainer/library-scripts/*.env /tmp/library-scripts/
 
 # [Choice] Ghidra version: none, latest, 10.1.4, 10.1.3, 9.0.1
-ARG GHIDRA_VERSION=latest
+ARG GHIDRA_VERSION=10.2.2
 ARG USERNAME=vscode
 RUN bash /tmp/library-scripts/ghidra-install.sh "${GHIDRA_VERSION}" "/ghidra" "${USERNAME}" "true" \ 
     && rm -rf /tmp/library-scripts/
