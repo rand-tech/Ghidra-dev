@@ -30,3 +30,5 @@ pip install pyhidra
 if uname -a | grep -q 'aarch64'; then
     $GHIDRA_INSTALL_DIR/support/buildNatives
 fi
+
+pip install -r /workspaces/Ghidra-dev/ghidra_yara/requirements.txt
