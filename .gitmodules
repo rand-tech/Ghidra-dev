@@ -1,0 +1,3 @@
+[submodule "ghidra_yara"]
+	path = ghidra_yara
+	url = https://github.com/rn0ch4/ghidra_yara.git
